@@ -8,7 +8,7 @@ In order to run it you have to install typescript by downloading it from npm rep
     npm install -g typescript
 ```             
 
-If you don't know if you have npm and Node.Js installed or not, run the following commands in your terminal to check it:
+If you don't know if you have npm and Node.Js installed, run the following commands in your terminal to check it:
                 
 ```sh
     node -v in

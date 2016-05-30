@@ -1,7 +1,8 @@
-function sayHello(name) {
-    return "Hello World! I'm " + name;
-}
+import { FerrariGtoSport } from "./gto-sport.ts"
 
-let user = "Mario Romano";
+//Execution
+let supercar = new FerrariGtoSport();
+supercar.setColor('red');
 
-document.body.innerHTML = sayHello(user);
+//Output: red
+supercar.printColor();

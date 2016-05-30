@@ -2,6 +2,17 @@
 <html>
 <head><title>TypeScript sample project</title></head>
 <body>
-<script src="helloworld.js"></script>
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script>
+    System.transpiler = 'typescript';
+    System.meta['typescript'] = { format: 'global', exports: 'ts' };
+    System.paths = {
+        '*': '*.ts',
+        'typescript': 'node_modules/typescript/lib/typescript.js'
+    }
+    System.import('helloworld').then(function(m) {
+        console.log('start');
+    });
+</script>
 </body>
 </html>
